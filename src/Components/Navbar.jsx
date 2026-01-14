@@ -5,7 +5,7 @@ import logo from '../assets/logo.svg'
 
 const Navbar = () => {
   return (
-    <nav className='w-full absolute z-10 top-0 left-0 bg-cover bg-center ' style={{backgroundImage: "url('src/assets/header_img.png')"}}> 
+    <nav className='w-full absolute z-10 top-0 left-0 '> 
     
     <div className=' flex justify-between bg-transparent py-4 px-6 md:px-16 mx-auto lg:px-32'> 
     <img src={logo} alt="Logo"/>
