@@ -6,8 +6,8 @@ import cross from '../assets/cross_icon.svg'
 
 
 const Navbar = () => {
-    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-    setIsMenuOpen(false);
+    const [menuOpen, setMenuOpen] = React.useState(false);
+
   return (
     <nav className='w-full absolute z-10 top-0 left-0 '> 
     
@@ -25,10 +25,12 @@ const Navbar = () => {
     </div>
 
         {/*--------MOBILE MENU--*/}
-       <div className='md:hidden  items-center fixed top-0 bottom-0 right-0 overflow-hidden bg-white transition-all '> 
+
+       <div className='md:hidden items-center fixed top-0 bottom-0 right-0 overflow-hidden bg-white transition-all '> 
         <div className='flex justify-end p-6 cursor-pointer'>
             <img src={cross} alt="THE CROSS ICON" className=' w-6 ' />
         </div>
+
         <div className='flex space-x-5 flex-col items-center gap-3 mt-5 text-lg font-medium transition-all duration-300 '> 
             <a href="#header" className='px-4 py-2 cursor-pointer inline-block rounded-full'>Home</a>
             <a href="#about" className='px-4 py-2 cursor-pointer inline-block rounded-full'>About</a>
