@@ -3,6 +3,7 @@ import logo from '../assets/logo.svg'
 import menu from '../assets/menu_icon.svg'
 import cross from '../assets/cross_icon.svg'
 import { useState } from 'react'
+import { useEffect } from 'react'
 
 
 
@@ -14,8 +15,11 @@ const Navbar = () => {
             document.body.style.overflow = 'hidden';
         } else {
             document.body.style.overflow = 'auto';
+        } return () => {
+            document.body.style.overflow = 'auto';
         }
-    })
+
+    }, [menuOpen]);
    
   return (
     <nav className='w-full absolute z-10 top-0 left-0 '> 
