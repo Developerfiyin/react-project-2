@@ -16,7 +16,17 @@ const About = () => {
          <div className='grid grid-col-2 gap-6 md:gap-10 w-full 2xl:pr-28 '>
         
              <div>
-              <p>10 + </p>
+              <p className='text-4xl font-medium text-gray-800'>10 + </p>
+              <p>Years of excellence</p>
+             </div>
+
+           <div>
+              <p className='text-4xl font-medium text-gray-800'>10 + </p>
+              <p>Years of excellence</p>
+             </div>
+
+              <div>
+              <p className='text-4xl font-medium text-gray-800'>10 + </p>
               <p>Years of excellence</p>
              </div>
 
