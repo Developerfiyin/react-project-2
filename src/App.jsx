@@ -3,6 +3,7 @@ import './App.css'
 
 import Header from './Components/Header'
 import About from './Components/About'
+import Project from './Components/Project'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,10 @@ function App() {
      
         <section id='about'>
           <About/>
+        </section>
+
+        <section id="project">
+          <Project />
         </section>
       </div>
       
