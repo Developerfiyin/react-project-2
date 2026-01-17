@@ -21,18 +21,18 @@ const About = () => {
              </div>
 
            <div>
-              <p className='text-4xl font-medium text-gray-800'>10 + </p>
-              <p>Years of excellence</p>
+              <p className='text-4xl font-medium text-gray-800'>12 + </p>
+              <p> Projects Completed </p>
              </div>
 
               <div>
-              <p className='text-4xl font-medium text-gray-800'>10 + </p>
-              <p>Years of excellence</p>
+              <p className='text-4xl font-medium text-gray-800'>20 + </p>
+              <p> Mn. Sq. Ft. Delivered</p>
              </div>
 
            <div>
-              <p className='text-4xl font-medium text-gray-800'>10 + </p>
-              <p>Years of excellence</p>
+              <p className='text-4xl font-medium text-gray-800'>25 + </p>
+              <p>Ongoing Projects </p>
              </div>
 
          </div>
