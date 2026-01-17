@@ -10,12 +10,18 @@ const About = () => {
 
         <div className=' flex flex-col md:flex-row items-center md:items-start md:gap-20 '>
 
-          <img src={image} alt="Our Brands  "  className='w-full sm:w1/2 max-w-lg '/>
+          <img src={image} alt="Our Brands" className='w-full sm:w-1/2 max-w-lg  '/>
 
+    <div className='flex flex-col items-center mt-10 md:items-start text-gray-600  '>
+         <div className='grid grid-col-2 gap-6 md:gap-10 w-full 2xl:pr-28 '>
+        
+             <div>
+              <p>10 + </p>
+              <p>Years of excellence</p>
+             </div>
 
-<div>
-  
-</div>
+         </div>
+   </div>
         </div>
         </div>
 
