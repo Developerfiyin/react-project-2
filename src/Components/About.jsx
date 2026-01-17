@@ -30,8 +30,13 @@ const About = () => {
               <p>Years of excellence</p>
              </div>
 
+           <div>
+              <p className='text-4xl font-medium text-gray-800'>10 + </p>
+              <p>Years of excellence</p>
+             </div>
+
          </div>
-   </div>
+       </div>
         </div>
         </div>
 
