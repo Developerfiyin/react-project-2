@@ -22,7 +22,7 @@ const Navbar = () => {
     }, [menuOpen]);
    
   return (
-    <nav className='w-full absolute z-10 top-0 left-0 '> 
+    <nav className='w-full absolute z-10 top-0 left-0'> 
     
     <div className=' flex justify-between bg-transparent py-4 px-6 md:px-16 mx-auto lg:px-32'> 
     <img src={logo} alt="Logo"/>
