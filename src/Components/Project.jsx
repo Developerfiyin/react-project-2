@@ -1,6 +1,7 @@
 import React from 'react'
 import sliderLeft from '../assets/left_arrow.svg'
 import sliderRight from '../assets/right_arrow.svg'
+import {assets, projectsData } from '../assets/assets'
 
 
 const Project = () => {
@@ -17,8 +18,24 @@ const Project = () => {
               <button className='p-3 bg-gray-200 rounded mr-2'>
                 <img src={sliderRight} alt="Right image" className='' aria-label='Next project' />
               </button> 
+                </div>
+
+            {/*-----PROJECT CARDS----*/}
+
+            <div>
+
+                <div>
+                   {projectsData.map( (project) => (
+                    <div key={project.id} className='mb-10 '>
+                      <img src={project.image} alt={project.title} className='w-full h-auto rounded-lg mb-4 '/>     
+                        <h3 className='text-xl font-semibold mb-2'> {project.title} </h3>
+                        <p className='text-gray-600'> {project.description} </p>
+                    </div>
+                     ))}
 
                 </div>
+            </div>
+
 
         </main>
   )
