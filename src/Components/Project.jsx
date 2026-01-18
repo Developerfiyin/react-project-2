@@ -7,25 +7,24 @@ import { useEffect } from 'react'
 
 const Project = () => {
      
-    useEffect(() => {
-        const handleResize = () => {
-            if (window.innerWidth >= 1024) {
-                setItemsToShow(4);
-            }
-            else if (window.innerWidth >= 768) {
-                setItemsToShow(2);
-            } else {
-                setItemsToShow(1);
-            }
-        };
-
-        window.addEventListener('resize', handleResize);
-        handleResize();
-        return () => wind
-
-
+    
     const [currentIndex, setCurrentIndex] = React.useState(0);  
     const [itemsToShow, setItemsToShow] = React.useState(1);
+
+    useEffect(() => {
+        const updateItemsToShow = () => {
+            if(window.innerHeight >= 1024) {
+                setItemsToShow(projectsData.length);
+            } else {
+                setItemsToShow(1)
+            };
+
+        } }); updateItemsToShow();
+
+        window.addEventListener('resize', updateItemsToShow);
+        return () => window.removeEventListener('resize', updateItemsToShow);
+
+        
 
     const nextProject = () => {
         setCurrentIndex((prevIndex) =>
