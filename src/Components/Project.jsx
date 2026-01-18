@@ -11,19 +11,7 @@ const Project = () => {
     const [currentIndex, setCurrentIndex] = React.useState(0);  
     const [itemsToShow, setItemsToShow] = React.useState(1);
 
-    useEffect(() => {
-        const updateItemsToShow = () => {
-            if(window.innerHeight >= 1024) {
-                setItemsToShow(projectsData.length);
-            } else {
-                setItemsToShow(1)
-            };
-
-        } }); updateItemsToShow();
-
-        window.addEventListener('resize', updateItemsToShow);
-        return () => window.removeEventListener('resize', updateItemsToShow);
-
+    
         
 
     const nextProject = () => {
