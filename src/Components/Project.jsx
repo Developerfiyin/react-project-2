@@ -1,6 +1,6 @@
 import React from 'react'
-import sliderLeft from '../assets/sliderLeft.png'
-import sliderRight from '../assets/sliderRight.png'
+import sliderLeft from '../assets/left_arrow.svg'
+import sliderRight from '../assets/right_arrow.svg'
 
 
 const Project = () => {
@@ -10,12 +10,13 @@ const Project = () => {
           <p className='text-gray-500 text-center mb-8 max-w-80 mx-auto'> Crafting spacing, Building Legacies-Explore Our Portfolio</p>
               
               {/* Slider buttons */}
-              <button>
-                <img src={sliderLeft} alt="Left image"  />
+              <button className='p-3 bg-gray-200 rounded mr-2'>
+                <img src={sliderLeft} alt="Left image" className='' aria-label='Previous project'  />
               </button>
 
-              <button>
-                <img src={sliderRight} alt="Right image" />
+
+              <button className='p-3 bg-gray-200 rounded mr-2'>
+                <img src={sliderRight} alt="Right image" className='' aria-label='Next project' />
               </button> 
 
         </main>
