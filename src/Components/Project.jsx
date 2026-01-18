@@ -12,20 +12,15 @@ const Project = () => {
 
   /*  useEffect(() => {
         const updateItemsToShow = () => {
-            const screenWidth = window.innerWidth;
-            if (screenWidth < 640) {
-                setItemsToShow(1);
-            } else if (screenWidth < 1024) {
-                setItemsToShow(2);
+            if(window.innerWIdth >= 1024) {
+            setItemsToShow(projectsData.length);
             } else {
-                setItemsToShow(3);
-            }
-        };
-
-        updateItemsToShow();
+                setItemsToShow(1)
+            };
+        updateItemsToShow()
         window.addEventListener('resize', updateItemsToShow);
-
-        return () => window.removeEventListener('resize', updateItemsToShow);
+        return () => window.rem oveEventListener('resize', updateItemsToShow);
+      }
     }, []); */
 
     const nextProject = () => {
@@ -58,7 +53,7 @@ const Project = () => {
 
             {/*-----PROJECT CARDS----*/}
             <div className='overflow-hidden '>
-                <div className='flex gap-8 transition-transform duration-500 ease-in-out' style={{transform: `translateX(-${currentIndex * (100 / itemsToShow)}%)` }}>
+                <div className='flex gap-8 transition-transform duration-500 ease-in-out' style={{transform: `translateX(-${(currentIndex * 100) / itemsToShow}%)`}}>
                    {projectsData.map((project, index ) => (
                     <div key={index} className='relative shrink-0 w-full sm:w-1/4'>
                       <img src={project.image} alt={project.title} className='w-full h-auto mb-14' />     
