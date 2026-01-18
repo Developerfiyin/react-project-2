@@ -10,18 +10,19 @@ const Project = () => {
     const [currentIndex, setCurrentIndex] = useState(0);  
     const [itemsToShow, setItemsToShow] = useState(1);
 
-  /*  useEffect(() => {
+    useEffect(() => {
         const updateItemsToShow = () => {
-            if(window.innerWIdth >= 1024) {
+            if(window.innerWidth >= 1024) {
             setItemsToShow(projectsData.length);
             } else {
                 setItemsToShow(1)
+            }
             };
         updateItemsToShow()
         window.addEventListener('resize', updateItemsToShow);
-        return () => window.rem oveEventListener('resize', updateItemsToShow);
-      }
-    }, []); */
+        return () => window.removeEventListener('resize', updateItemsToShow);
+      
+    }, []); 
 
     const nextProject = () => {
         setCurrentIndex((prevIndex) =>
