@@ -10,15 +10,15 @@ const Project = () => {
     const [itemsToShow, setItemsToShow] = React.useState(1);
 
     const nextProject = () => {
-        if (currentIndex < projectsData.length - itemsToShow) {
-            setCurrentIndex(currentIndex + 1);
-        }
+        setCurrentIndex((prevIndex) =>
+        (prevIndex + 1) % projectsData.length
+        );
     };
-    
+
     const prevProject = () => {
-        if (currentIndex > 0) {
-            setCurrentIndex(currentIndex - 1);
-        }       
+        setCurrentIndex((prevIndex) =>
+        (prevIndex - 1 + projectsData.length) % projectsData.length
+        );
     };
 
   return (
