@@ -17,9 +17,9 @@ const Project = () => {
 
     const prevProject = () => {
         setCurrentIndex((prevIndex) =>
-        (prevIndex - 1 + projectsData.length) % projectsData.length
+        (prevIndex === 0 ? projectsData.length - 1 : prevIndex - 1)
         );
-    };
+    }; 
 
   return (
     <main className=' container mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32 w-full overflow-hidden ' id="project" >
@@ -27,11 +27,11 @@ const Project = () => {
           <p className='text-gray-500 text-center mb-8 max-w-80 mx-auto'> Crafting spacing, Building Legacies-Explore Our Portfolio</p>
               
               <div className='flex justify-end items-center mb-8 '>
-                <button className='p-3 bg-gray-200 rounded mr-2'>
+                <button className='p-3 bg-gray-200 rounded mr-2' onClick={prevProject}>
                   <img src={sliderLeft} alt="Left image" className='' aria-label='Previous project'  />
                 </button>
 
-              <button className='p-3 bg-gray-200 rounded mr-2'>
+              <button className='p-3 bg-gray-200 rounded mr-2' onClick={nextProject}>
                 <img src={sliderRight} alt="Right image" className='' aria-label='Next project' />
               </button> 
                 </div>
@@ -39,14 +39,14 @@ const Project = () => {
             {/*-----PROJECT CARDS----*/}
 
             <div className='overflow-hidden '>
-                <div className='flex gap-8 transition-transform duration-500 ease-in-out '>
+                <div className='flex gap-8 transition-transform duration-500 ease-in-out' style={{transform: `translateX(-${currentIndex * (100 / itemsToShow)}%)` }}>
                    {projectsData.map((project, index ) => (
                     <div key={index} className='relative shrink-0 w-full sm:w-1/4'>
                       <img src={project.image} alt={project.title} className='w-full h-auto mb-14' />     
                       <div className='absolute left-0 right-0 bottom-5 flex justify-center '>
                         <div className='bg-white inline-block w-3/4 px-4 py-2  shadow-md'>
                         <h2 className='text-xl font-semibold mb-2 text-gray-800'> {project.title} </h2>
-                        <p className='text-gray-600 text-sm'> {project.price} <span></span>   {project.location} </p>
+                        <p className='text-gray-600 text-sm'> {project.price} <span>  </span>   {project.location} </p>
 
 
                         </div>
