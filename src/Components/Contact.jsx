@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <main className='py-12'>
+    <main className='py-12 '>
         
         Contact
         
