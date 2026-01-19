@@ -7,8 +7,8 @@ const Contact = () => {
         <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center '> Contact <span className='underline underline-offset-4 decoration-1 font-light'> With Us</span> </h1>    
         <p> Ready to Make a Move? Let's Build Your  Future Together. </p>
 
-    <form action="">
-    <div>
+    <form action="" className='max-w-2xl mx-auto text-gray-300 rounded py-3 '>
+    <div className='flex flex-wrap '>
             <div className='w-full md:w-1/2  text-left '>
                         Your Name
               <input type="text" placeholder='Your Name' name='Name' required 
@@ -16,7 +16,9 @@ const Contact = () => {
             </div>
 
            <div className='w-full md:w-1/2 text-left md:pl-4 '>
-            Your Email
+               Your Email
+            <input type="email" name='Email' required
+             className='w-full border border-gray-300 rounded py-3 px-4 mt-2 ' />
            </div>
 
     </div>
