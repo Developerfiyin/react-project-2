@@ -4,6 +4,7 @@ import './App.css'
 import Header from './Components/Header'
 import About from './Components/About'
 import Project from './Components/Project'
+import Testimonials from './Components/Testimonials'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,11 @@ function App() {
         <section id="project">
           <Project />
         </section>
+
+     <section>
+    <Testimonials/>
+   </section>
+
       </div>
       
     </>
