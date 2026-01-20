@@ -25,11 +25,12 @@ function App() {
           <Project />
         </section>
 
-     <section>
+     <section id='testimonials'>
     <Testimonials/>
    </section>
 
-<section>
+<section id='contact
+'>
   <Contact/>
 </section>
 
