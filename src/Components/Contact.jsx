@@ -6,10 +6,10 @@ const Contact = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
+    setResult("Sending....")
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+    formData.append("access_key", "516af617-cd78-438a-8bc2-48ab9e326c3a");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -50,14 +50,12 @@ const Contact = () => {
              className='w-full border border-gray-400 rounded py-3 px-4 mt-2 ' />
            </div>
      </div>
-
     <div> 
         <textarea className='resize-none w-full pr-2 py-6 px-4 border rounded border-gray-400 mt-3'
-         name="text" required placeholder='Message'>Message</textarea>
+         name="text" required placeholder='Message'></textarea>
        </div>
-    
-          <button className='bg-blue-500 rounded py-2 px-12 mb-12'> Sumbit Form </button> 
-</form>
+          <button className='bg-blue-500 rounded py-2 px-12 mb-12' > {result ? result : "Send Message" } </button> 
+      </form>
 
         </main>
   )
