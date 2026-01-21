@@ -25,9 +25,9 @@ const Footer = () => {
      <div className='w-full md:w-1/3'> 
         <h3 className='text-lg font-medium mb-4 text-white '> Subscribe to our newsletter</h3>
            <p className='max-w-80 font-medium mb-4 text-gray-500'> The greatest news, articles, resources, sent to your weekly. </p>
-           <div>
-            <input type="text" placeholder='Enter Your Email' className='py-2 rounded px-2  text-gray-300 border border-gray-800 focus:outline-none md:w-full  ' />
-             <button className='bg-blue-500 text-white '> Subscribe </button>
+           <div className='flex gap-3 '>
+            <input type="text" placeholder='Enter Your Email' className='py-2 rounded px-2 md:w-auto text-gray-300 border border-gray-800 focus:outline-none w-full  ' />
+             <button className='bg-blue-500 text-white font-medium text-xl rounded py-2 px-4 '> Subscribe </button>
            </div>
          </div>
 
