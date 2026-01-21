@@ -1,4 +1,8 @@
 import React from 'react'
+import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Contact = () => {
 
@@ -50,7 +54,8 @@ const Contact = () => {
              className='w-full border border-gray-400 rounded py-3 px-4 mt-2 ' />
            </div>
      </div>
-    <div> 
+    <div className='text-left' > 
+        Message
         <textarea className='resize-none w-full pr-2 py-6 px-4 border rounded border-gray-400 mt-3'
          name="text" required placeholder='Message'></textarea>
        </div>
