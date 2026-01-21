@@ -8,6 +8,7 @@ import Testimonials from './Components/Testimonials'
 import Contact from './Components/Contact'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from './Components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -36,6 +37,9 @@ function App() {
   <Contact/>
 </section>
 
+            <section id="footer">
+              <Footer/>
+            </section>
 
       </div>
       
