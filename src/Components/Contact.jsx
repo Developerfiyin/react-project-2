@@ -1,5 +1,6 @@
 import React from 'react'
 import React from 'react';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
@@ -23,12 +24,14 @@ const Contact = () => {
 
     if (data.success) {
       setResult("");
+      toast.success("Form Submitted Successfully")
       alert("Form Submitted Successfully")
       event.target.reset();
     } else {
       console.log("Error", data);
       setResult("")
       alert(data.message);
+      toast.error(data.message)
     }
 }
 
