@@ -6,6 +6,8 @@ import About from './Components/About'
 import Project from './Components/Project'
 import Testimonials from './Components/Testimonials'
 import Contact from './Components/Contact'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +15,7 @@ function App() {
   return (
     <>
       <div>
+      <ToastContainer />
        <section id='header'>
           <Header />
          </section>
@@ -29,8 +32,7 @@ function App() {
     <Testimonials/>
    </section>
 
-<section id='contact
-'>
+<section id='contact'>
   <Contact/>
 </section>
 
