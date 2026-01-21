@@ -12,17 +12,19 @@ const Footer = () => {
              Lorem Ipsum has been the industry's standard dummy text. </p> 
              </div>
        
-     <div className=''> 
-         <h3>Company </h3>
-         <div>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+     <div className='w-full md:1/5 mb-8 md:mb-0'> 
+         <h3 className='text-xl text-gray-900 font-bold mb-4'>Company </h3>
+         <div className="flex flex-col gap-2 text-gray-400 ">
+            <a href="#home" className='hover:text-white '>Home</a>
+            <a href="about" className='hover:text-white'>About Us</a>
+            <a href="projects" className='hover:text-white' > Projects</a>
+            <a href="#testimonials" className='hover:text-white'>Testimonials</a>
          </div>
+         </div>
+         
+     <div className=''> 
         
          </div>
-     <div>  </div>
 
     </div>
 
