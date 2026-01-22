@@ -1,7 +1,7 @@
 import React from 'react'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import { motion } from 'framer-motion';
 
 const Contact = () => {
 
@@ -32,9 +32,16 @@ const Contact = () => {
     }
 }
 
-
   return (
-    <main className='py-20 text-center p-6 w-full overflow-hidden lg:px-32 '>
+    <motion.main
+    
+     initial={{opacity:0, x:-200 }}
+    transition={ {duration:1}}
+    whileInView={{opacity:1, x:0}}
+    viewport={ {once : true}}
+    
+    
+    className='py-20 text-center p-6 w-full overflow-hidden lg:px-32 '>
         
         <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center '> Contact <span className='underline underline-offset-4 decoration-1 font-light'> With Us</span> </h1>    
         <p> Ready to Make a Move? Let's Build Your  Future Together. </p>
@@ -61,7 +68,7 @@ const Contact = () => {
           <button className='bg-blue-500 rounded py-2 px-12 mb-12' > {result ? result : "Send Message" } </button> 
       </form>
 
-        </main>
+        </motion.main>
   )
 }
 
