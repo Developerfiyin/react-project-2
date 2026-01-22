@@ -1,10 +1,17 @@
 import React from 'react'
 import logo from '../assets/logo_dark.svg'
+import { motion } from 'framer-motion'
 
 const Footer = () => {
   return (
-    <main className='pt-10 px-4 md:px-20 lg:px-32 bg-gray-900 w-full overflow-hidden '>
-
+    <motion.main 
+    
+     initial={{opacity:0, x:200 }}
+    transition={ {duration:1}}
+    whileInView={{opacity:1, x:0}}
+    viewport={ {once : true}}
+    
+    className='pt-10 px-4 md:px-20 lg:px-32 bg-gray-900 w-full overflow-hidden '>
     <div className='flex flex-col mx-auto justify-between items-start md:flex-row  '>  
      <div className='w-full md:w-1/3 mb-8 md:m-0'>
         <img src={logo} alt="The dark logo image " className=''  />
@@ -30,7 +37,6 @@ const Footer = () => {
              <button className='bg-blue-500 text-white font-medium text-xl rounded py-2 px-4 '> Subscribe </button>
            </div>
          </div>
-
     </div>
 
  {/* second div*/}
@@ -41,7 +47,7 @@ const Footer = () => {
 
 
 
-    </main>
+    </motion.main>
   )
 }
 
