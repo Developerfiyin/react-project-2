@@ -11,7 +11,7 @@ const Footer = () => {
     whileInView={{opacity:1, x:0}}
     viewport={ {once : true}}
     
-    className='pt-10 px-4 md:px-20 lg:px-32 bg-gray-900 w-full overflow-hidden '>
+    className='pt-10 px-4 md:px-20 lg:px-32 bg-gray-900  overflow-hidden '>
     <div className='flex flex-col mx-auto justify-between items-start md:flex-row  '>  
      <div className='w-full md:w-1/3 mb-8 md:m-0'>
         <img src={logo} alt="The dark logo image " className=''  />
