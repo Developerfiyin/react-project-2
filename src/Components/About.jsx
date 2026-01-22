@@ -1,8 +1,18 @@
 import React from 'react'
 import image from '../assets/brand_img.png'
+import { motion } from 'framer-motion'
+
+
 const About = () => {
   return (
-    <main className='mx-auto flex flex-col container items-center justify-center p-14 md:px-20 lg:px-32 w-full overflow-hidden ' id="about">
+    <motion.main 
+    
+    initial={{opacity:0, x:200 }}
+    transition={ {duration:1}}
+    whileInView={{opacity:1, x:0}}
+    viewport={ {once : true}}
+
+    className='mx-auto flex flex-col container items-center justify-center p-14 md:px-20 lg:px-32 w-full overflow-hidden ' id="about">
         <h2 className='text-2xl font-bold mb-2 sm:text-4xl '> About Us <span className='underline underline-offset-4 decoration-1 font-light ' > Our Brands</span> </h2>
         <p className='text-gray-500 max-w-80 mb-8 text-center'> Passionate about properties Dedicated to our vision.</p>
 
@@ -43,7 +53,7 @@ const About = () => {
         </div>
 
                                                         
-    </main>
+    </motion.main>
   )
 }
 
